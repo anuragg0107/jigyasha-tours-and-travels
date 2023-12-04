@@ -91,6 +91,35 @@ a {
   text-decoration: none;
 }
 
+/* Whatsapp Button and call button */
+#call-button {
+  position: fixed;
+  bottom: 80px; 
+  left: 20px;
+  z-index: 100000; 
+}
+
+#call-button img {
+  width: 50px; 
+  height: 50px; 
+  cursor: pointer;
+}
+
+/* Rest of your existing styles */
+
+#whatsapp-button {
+  position: fixed;
+  bottom: 20px; 
+  left: 20px;
+  z-index: 100000; 
+}
+
+#whatsapp-button img {
+  width: 50px;
+  height: 50px; 
+  cursor: pointer;
+}
+
 a,
 img,
 span,
@@ -346,7 +375,7 @@ body {
   visibility: hidden;
   pointer-events: none;
   transition: 0.15s ease-in;
-  z-index: 3;
+  z-index: 1000;
 }
 
 .navbar.active {
@@ -511,6 +540,7 @@ body {
   background-color: #000;
   border-radius: 10px;
   cursor: pointer;
+  z-index: 0;
 }
 .image_wrapper {
   position: relative;
@@ -542,6 +572,7 @@ body {
 }
 
 .popular {
+  z-index: 1;
   padding-block: var(--section-padding);
 }
 
@@ -890,21 +921,23 @@ address {
 
 .go-top {
   position: fixed;
-  bottom: 15px;
-  right: 15px;
-  width: 35px;
-  height: 35px;
-  background: var(--bright-navy-blue);
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  font-weight: 800;
+  background: green;
   color: var(--white);
   display: grid;
   place-items: center;
-  font-size: 18px;
+  font-size: 20px;
   border-radius: 6px;
   box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.5);
   opacity: 0;
   transform: translateY(10px);
   visibility: hidden;
   transition: var(--transition);
+  z-index: 1000000;
 }
 
 .go-top.active {
@@ -1117,6 +1150,9 @@ address {
     grid-template-columns: 1fr 1fr;
     gap: 30px;
     margin-bottom: 50px;
+  }
+  .popular-list > li {
+    width: 100%; 
   }
 
   .popular-list > li:not(:last-child) {
@@ -1423,7 +1459,7 @@ address {
     margin-bottom: 20px;
   }
   .hero-video{
-    height:60% ;
+    height:100% ;
   }
 }
 
