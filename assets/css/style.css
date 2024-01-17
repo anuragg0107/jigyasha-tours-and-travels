@@ -94,14 +94,14 @@ a {
 /* Whatsapp Button and call button */
 #call-button {
   position: fixed;
-  bottom: 80px; 
+  bottom: 80px;
   left: 20px;
-  z-index: 100000; 
+  z-index: 100000;
 }
 
 #call-button img {
-  width: 50px; 
-  height: 50px; 
+  width: 50px;
+  height: 50px;
   cursor: pointer;
 }
 
@@ -109,14 +109,14 @@ a {
 
 #whatsapp-button {
   position: fixed;
-  bottom: 20px; 
+  bottom: 20px;
   left: 20px;
-  z-index: 100000; 
+  z-index: 100000;
 }
 
 #whatsapp-button img {
   width: 50px;
-  height: 50px; 
+  height: 50px;
   cursor: pointer;
 }
 
@@ -1152,7 +1152,7 @@ address {
     margin-bottom: 50px;
   }
   .popular-list > li {
-    width: 100%; 
+    width: 100%;
   }
 
   .popular-list > li:not(:last-child) {
@@ -1452,19 +1452,18 @@ address {
   .section-title {
     display: none;
   }
-  .package-name{
+  .package-name {
     font-size: 25px;
   }
-  .image-container{
+  .image-container {
     margin-bottom: 20px;
   }
-  .hero-video{
-    height:100% ;
+  .hero-video {
+    height: 100%;
   }
 }
 
 /* Loading CSS */
-
 
 #loading {
   display: block;
@@ -1488,5 +1487,3 @@ address {
   transform: translate(-50%, -50%);
   z-index: 100;
 }
-
-
